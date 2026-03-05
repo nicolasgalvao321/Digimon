@@ -1,7 +1,7 @@
 const digimonInput = document.getElementById("digimonInput");
 const buscarDigimon = document.getElementById("buscarDigimon");
 
-const CotarAcao = async () => {
+const BuscarDig = async () => {
     const acao = digimonInput.value;
 
     const response = await fetch(`https://digimon-api.vercel.app/api/digimon/name/${acao}`);
@@ -22,4 +22,5 @@ const CotarAcao = async () => {
     card.style.display = "block";
 };
 
-buscarDigimon.addEventListener("click", CotarAcao);
+
+buscarDigimon.addEventListener("click", BuscarDig);
